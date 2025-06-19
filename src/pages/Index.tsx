@@ -390,25 +390,27 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-6" style={{ 
-        background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
-      }}>
+      <footer
+        className="py-6"
+        style={{
+          background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)'
+        }}
+      >
         <div className="w-full">
-          <div className="flex items-center justify-center px-6">
-            <p className="text-white/60 left-[1.5rem] absolute">
+          <div className="flex flex-col md:flex-col items-center justify-center px-6 space-y-4">
+            <p className="text-white/60 text-center">
               © 2025 Raízes Emocionais | Todos os direitos reservados.
             </p>
-            <p className="text-white/30 text-xs">
+            <p className="text-white/30 text-xs text-center">
               Desenvolvido by Somma Marketing
             </p>
-            <Button 
+            <Button
               onClick={scrollToHero}
-              className="absolute right-[1.5rem] bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors"
+              className="bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors flex items-center gap-2"
             >
               <CircleArrowUp className="w-5 h-5" />
               Voltar ao início
             </Button>
-            
           </div>
         </div>
       </footer>
