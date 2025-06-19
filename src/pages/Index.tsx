@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Users, BookOpen, Target, CheckCircle, Star, ArrowUp, MessageCircle, Ticket, Brain, Shield, Lightbulb, Compass, Zap } from "lucide-react";
+import { Heart, Users, BookOpen, Target, CheckCircle, Star, ArrowUp, MessageCircle, Ticket, Brain, Shield, Lightbulb, Compass, Zap, CircleArrowUp } from "lucide-react";
 
 const Index = () => {
   const scrollToHero = () => {
@@ -17,7 +17,7 @@ const Index = () => {
     },
     {
       title: "Desenvolver uma comunicação mais empática",
-      description: "Techniques práticas para uma comunicação mais profunda e conectada",
+      description: "Técnicas práticas para uma comunicação mais profunda e conectada",
       icon: Heart
     },
     {
@@ -84,7 +84,7 @@ const Index = () => {
     },
     {
       question: "O evento é presencial ou online?",
-      answer: "O evento será realizado online, permitindo participação de qualquer lugar."
+      answer: "O evento será realizado presencialmente, permitindo participação de qualquer lugar."
     }
   ];
 
@@ -93,15 +93,15 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold" style={{ color: '#f0efee' }}>
+          <div className="text-2xl font-bold" style={{ color: '#082144' }}>
             Raízes Emocionais
           </div>
           <Button 
-            className="text-white font-semibold hover:scale-105 transition-transform px-6 py-3 rounded-full"
-            style={{ backgroundColor: '#274375' }}
+            className="text-white font-semibold hover:scale-105 transition-transform px-8 py-3 rounded-full"
+            style={{ backgroundColor: '#c39f12' }}
           >
-            <Ticket className="w-5 h-5 mr-2" />
             Garanta sua Vaga
+            <Ticket className="w-5 h-5 ml-2" />
           </Button>
         </div>
       </header>
@@ -124,11 +124,11 @@ const Index = () => {
             </p>
             <Button 
               size="lg" 
-              className="text-white font-bold text-lg px-10 py-5 hover:scale-105 transition-transform shadow-xl rounded-full"
-              style={{ backgroundColor: '#274375' }}
+              className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
+              style={{ backgroundColor: '#c39f12' }}
             >
-              <Ticket className="w-6 h-6 mr-3" />
-              Quero Participar
+              Quero Participar!
+              <Ticket className="w-6 h-6 ml-3" />
             </Button>
           </div>
         </div>
@@ -140,7 +140,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img 
-                src="/lovable-uploads/28ca8390-d96c-45c6-8fe9-a73036287093.png" 
+                src="/img-uploads/heart.png" 
                 alt="Raízes emocionais - Arte representativa"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
@@ -207,7 +207,7 @@ const Index = () => {
               return (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-white/10 backdrop-blur-sm">
                   <CardContent className="p-6">
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-white/20">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-[#c39f12]">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="font-bold text-white mb-2">{benefit.title}</h3>
@@ -221,7 +221,7 @@ const Index = () => {
       </section>
 
       {/* Conteúdo */}
-      <section className="py-20" style={{ backgroundColor: 'white' }}>
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
@@ -246,7 +246,7 @@ const Index = () => {
       </section>
 
       {/* Depoimentos */}
-      <section className="py-20">
+      <section className="py-20" style={{ backgroundColor: 'white' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
@@ -275,7 +275,7 @@ const Index = () => {
       </section>
 
       {/* Sobre a Palestrante */}
-      <section className="py-20" style={{ backgroundColor: 'white' }}>
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -289,7 +289,7 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/c6af6fb1-8b8b-4d85-8f63-21678023f36c.png" 
+                  src="/img-uploads/c6af6fb1-8b8b-4d85-8f63-21678023f36c.png" 
                   alt="Amélia Cristina Skiba"
                   className="rounded-2xl shadow-2xl w-full object-cover"
                 />
@@ -306,16 +306,16 @@ const Index = () => {
                   </p>
                 </div>
                 <div className="grid gap-3">
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#446cad' }}>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
                     Mestre em Desenvolvimento Infantil
                   </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#446cad' }}>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
                     Perita em Programação Neurolinguística
                   </Badge>
                   <Badge className="w-fit text-white" style={{ backgroundColor: '#446cad' }}>
                     Especialista em Neuropsicologia e Aprendizagem
                   </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#446cad' }}>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
                     Terapeuta Multidimensional
                   </Badge>
                 </div>
@@ -390,27 +390,25 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12" style={{ backgroundColor: '#082144' }}>
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center justify-center space-y-8">
-            <h3 className="text-2xl font-bold text-white">
-              Raízes Emocionais
-            </h3>
-            <p className="text-white/80 text-center">
-              Transformando famílias através da educação emocional
+      <footer className="py-6" style={{ 
+        background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
+      }}>
+        <div className="w-full">
+          <div className="flex items-center justify-center px-6">
+            <p className="text-white/60 left-[1.5rem] absolute">
+              © 2025 Raízes Emocionais | Todos os direitos reservados.
+            </p>
+            <p className="text-white/30 text-xs">
+              Desenvolvido by Somma Marketing
             </p>
             <Button 
               onClick={scrollToHero}
-              className="bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors"
+              className="absolute right-[1.5rem] bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors"
             >
-              <ArrowUp className="w-5 h-5 mr-2" />
-              Voltar ao Topo
+              <CircleArrowUp className="w-5 h-5" />
+              Voltar ao início
             </Button>
-            <div className="pt-8 border-t border-white/20 w-full text-center">
-              <p className="text-white/60">
-                © 2024 Amélia Skiba Corporation. Todos os direitos reservados.
-              </p>
-            </div>
+            
           </div>
         </div>
       </footer>
