@@ -93,7 +93,7 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold" style={{ color: '#082144' }}>
+          <div className="lg:text-2xl text-1xl font-bold" style={{ color: '#082144' }}>
             Raízes Emocionais
           </div>
           <Button 
@@ -113,9 +113,9 @@ const Index = () => {
           backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.7)), url("https://images.pexels.com/photos/4098152/pexels-photo-4098152.jpeg")'
         }}
       >
-        <div className="container mx-auto px-6 py-20">
+        <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className=" lg:text-6xl text-4xl font-bold text-white mb-6 leading-tight">
               Descubra as <span className="text-yellow-400">Raízes Emocionais</span> do Comportamento Infantil
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
@@ -344,7 +344,7 @@ const Index = () => {
           <div className="space-y-4">
             <Button 
               size="lg" 
-              className="bg-yellow-400 text-gray-900 font-bold text-xl px-12 py-6 hover:bg-yellow-300 transition-colors shadow-xl"
+              className="bg-yellow-400 text-gray-900 font-bold text-xl lg:px-12 py-6 hover:bg-yellow-300 transition-colors shadow-xl"
             >
               Garantir Minha Vaga Agora
             </Button>
@@ -397,8 +397,8 @@ const Index = () => {
         }}
       >
         <div className="w-full">
-          <div className="flex flex-col md:flex-col items-center justify-center px-6 space-y-4">
-            <p className="text-white/60 text-center">
+          <div className="flex flex-col items-center justify-center px-6 space-y-4 lg:space-y-0">
+            <p className="text-white/60 lg:left-[1.5rem] text-center lg:absolute md:relative">
               © 2025 Raízes Emocionais | Todos os direitos reservados.
             </p>
             <p className="text-white/30 text-xs text-center">
@@ -406,7 +406,7 @@ const Index = () => {
             </p>
             <Button
               onClick={scrollToHero}
-              className="bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors flex items-center gap-2"
+              className="lg:absolute lg:right-[1.5rem] md:relative bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors flex items-center gap-2"
             >
               <CircleArrowUp className="w-5 h-5" />
               Voltar ao início
