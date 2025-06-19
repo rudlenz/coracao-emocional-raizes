@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Users, BookOpen, Target, CheckCircle, Star, ArrowUp, MessageCircle } from "lucide-react";
+import { Heart, Users, BookOpen, Target, CheckCircle, Star, ArrowUp, MessageCircle, Ticket, Brain, Shield, Lightbulb, Compass, Zap } from "lucide-react";
 
 const Index = () => {
   const scrollToHero = () => {
@@ -10,12 +10,36 @@ const Index = () => {
   };
 
   const benefits = [
-    "Compreender os sinais emocionais do seu filho",
-    "Desenvolver uma comunicação mais empática",
-    "Criar um ambiente familiar mais harmonioso",
-    "Aplicar técnicas de educação positiva no dia a dia",
-    "Fortalecer o vínculo afetivo com seus filhos",
-    "Transformar desafios em oportunidades de crescimento"
+    {
+      title: "Compreender os sinais emocionais do seu filho",
+      description: "Aprenda a identificar e interpretar as necessidades emocionais por trás dos comportamentos",
+      icon: Brain
+    },
+    {
+      title: "Desenvolver uma comunicação mais empática",
+      description: "Techniques práticas para uma comunicação mais profunda e conectada",
+      icon: Heart
+    },
+    {
+      title: "Criar um ambiente familiar mais harmonioso",
+      description: "Transforme sua casa em um espaço de amor, segurança e crescimento",
+      icon: Shield
+    },
+    {
+      title: "Aplicar técnicas de educação positiva no dia a dia",
+      description: "Ferramentas práticas que você pode usar imediatamente",
+      icon: Lightbulb
+    },
+    {
+      title: "Fortalecer o vínculo afetivo com seus filhos",
+      description: "Construa conexões mais profundas e duradouras",
+      icon: Users
+    },
+    {
+      title: "Transformar desafios em oportunidades de crescimento",
+      description: "Veja os obstáculos como chances de evolução familiar",
+      icon: Compass
+    }
   ];
 
   const content = [
@@ -69,13 +93,14 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold" style={{ color: '#082144' }}>
+          <div className="text-2xl font-bold" style={{ color: '#f0efee' }}>
             Raízes Emocionais
           </div>
           <Button 
-            className="text-white font-semibold hover:scale-105 transition-transform"
+            className="text-white font-semibold hover:scale-105 transition-transform px-6 py-3 rounded-full"
             style={{ backgroundColor: '#274375' }}
           >
+            <Ticket className="w-5 h-5 mr-2" />
             Garanta sua Vaga
           </Button>
         </div>
@@ -85,7 +110,7 @@ const Index = () => {
       <section 
         className="min-h-screen flex items-center relative bg-cover bg-center"
         style={{ 
-          backgroundImage: 'linear-gradient(rgba(8, 33, 68, 0.7), rgba(68, 108, 173, 0.7)), url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&h=1080&fit=crop")'
+          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.7)), url("https://images.pexels.com/photos/4098152/pexels-photo-4098152.jpeg")'
         }}
       >
         <div className="container mx-auto px-6 py-20">
@@ -99,10 +124,11 @@ const Index = () => {
             </p>
             <Button 
               size="lg" 
-              className="text-white font-bold text-lg px-8 py-4 hover:scale-105 transition-transform shadow-xl"
+              className="text-white font-bold text-lg px-10 py-5 hover:scale-105 transition-transform shadow-xl rounded-full"
               style={{ backgroundColor: '#274375' }}
             >
-              Quero Participar Agora
+              <Ticket className="w-6 h-6 mr-3" />
+              Quero Participar
             </Button>
           </div>
         </div>
@@ -114,8 +140,8 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=400&fit=crop" 
-                alt="Mãe e filha conectadas emocionalmente"
+                src="/lovable-uploads/28ca8390-d96c-45c6-8fe9-a73036287093.png" 
+                alt="Raízes emocionais - Arte representativa"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
               <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full flex items-center justify-center shadow-xl"
@@ -163,34 +189,39 @@ const Index = () => {
       </section>
 
       {/* Benefícios */}
-      <section className="py-20" style={{ backgroundColor: 'white' }}>
+      <section className="py-20" style={{ 
+        background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
+      }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
+            <h2 className="text-4xl font-bold mb-4 text-white">
               Venha aprender a ouvir com o coração!
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Após participar deste evento, você será capaz de transformar completamente sua relação familiar
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
-                       style={{ backgroundColor: '#446cad' }}>
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="font-medium" style={{ color: '#082144' }}>{benefit}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {benefits.map((benefit, index) => {
+              const IconComponent = benefit.icon;
+              return (
+                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-white/10 backdrop-blur-sm">
+                  <CardContent className="p-6">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-white/20">
+                      <IconComponent className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="font-bold text-white mb-2">{benefit.title}</h3>
+                    <p className="text-white/80 text-sm">{benefit.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Conteúdo */}
-      <section className="py-20">
+      <section className="py-20" style={{ backgroundColor: 'white' }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
@@ -202,7 +233,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {content.map((item, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-white shadow-md">
+              <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-gray-50 shadow-md">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
                      style={{ backgroundColor: '#274375' }}>
                   <span className="text-white font-bold">{index + 1}</span>
@@ -215,7 +246,7 @@ const Index = () => {
       </section>
 
       {/* Depoimentos */}
-      <section className="py-20" style={{ backgroundColor: 'white' }}>
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
@@ -244,7 +275,7 @@ const Index = () => {
       </section>
 
       {/* Sobre a Palestrante */}
-      <section className="py-20">
+      <section className="py-20" style={{ backgroundColor: 'white' }}>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -258,7 +289,7 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=600&fit=crop" 
+                  src="/lovable-uploads/c6af6fb1-8b8b-4d85-8f63-21678023f36c.png" 
                   alt="Amélia Cristina Skiba"
                   className="rounded-2xl shadow-2xl w-full object-cover"
                 />
@@ -317,15 +348,12 @@ const Index = () => {
             >
               Garantir Minha Vaga Agora
             </Button>
-            <p className="text-white/80">
-              ⚡ Últimas vagas disponíveis - Inscreva-se hoje!
-            </p>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ backgroundColor: 'white' }}>
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -351,8 +379,7 @@ const Index = () => {
             <div className="text-center mt-12">
               <p className="text-gray-600 mb-4">Ainda tem dúvidas?</p>
               <Button 
-                className="text-white font-semibold"
-                style={{ backgroundColor: '#274375' }}
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold transition-colors"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Falar no WhatsApp
@@ -365,11 +392,11 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12" style={{ backgroundColor: '#082144' }}>
         <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
+          <div className="flex flex-col items-center justify-center space-y-8">
+            <h3 className="text-2xl font-bold text-white">
               Raízes Emocionais
             </h3>
-            <p className="text-white/80 mb-8">
+            <p className="text-white/80 text-center">
               Transformando famílias através da educação emocional
             </p>
             <Button 
@@ -379,7 +406,7 @@ const Index = () => {
               <ArrowUp className="w-5 h-5 mr-2" />
               Voltar ao Topo
             </Button>
-            <div className="mt-8 pt-8 border-t border-white/20">
+            <div className="pt-8 border-t border-white/20 w-full text-center">
               <p className="text-white/60">
                 © 2024 Amélia Skiba Corporation. Todos os direitos reservados.
               </p>
