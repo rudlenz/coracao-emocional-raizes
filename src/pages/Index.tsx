@@ -43,48 +43,49 @@ const Index = () => {
   ];
 
   const content = [
-    "Como identificar as raízes emocionais por trás dos comportamentos",
-    "Técnicas de comunicação não-violenta com crianças", 
-    "O papel das emoções no desenvolvimento infantil",
-    "Estratégias práticas da Educação Expressiva",
-    "Como educar pelo sentir: metodologia exclusiva",
-    "Ferramentas para criar conexões autênticas"
+    "Vai aprender o que está por trás do comportamento dos teus filhos ",
+    "Vai aprender a prevenir problemas futuros",
+    "Vai aprender a como construir uma mente de sucesso",
+    "Vai aprender a ensinar com mais assertividade",
+    "Vai mergulhar no planeta das emoções e aprender a proteger as suas emoções e a ser um guia emocional para eles",
+    "Vai se aproximar da sua criança interior e do mundo infantil com amor e ternura",
+    "Vai começar a compreender atitudes dos teus filhos e de outras pessoas que você no momento não entende",
+    "Vai começar a compreender as forças do inconsciente no poder de decisão",
+    "Vai furar a bolha e começar a enxergar a vida com mais sensibilidade",
+    "Vai se aproximar de Deus"
   ];
 
   const testimonials = [
     {
-      name: "Marina Santos",
-      text: "Aprendi a ver minha filha com outros olhos. Agora compreendo que seus comportamentos são formas de comunicar suas necessidades emocionais.",
+      name: "Luciane Dias",
+      text: "Eu sou Luciane, depois de estar passando por momentos difíceis dentro da minha família, Deus me presenteou com essa pessoa maravilhosa a Amélia. O que tenho a dizer sobre as mentorias com a Amélia foi que nos primeiros encontros tive medo de me abrir, mas um encontro após o outro fui vendo a realidade da minha vida, A METODOLOGIA QUE ELA UTILIZA FOI PRIMORDIAL PARA COMPREENDER O MEU MUNDO E O DA MINHA FILHA, o qual estava com grandes problemas de relacionamento, recebi conselhos e críticas construtivas para compreender melhor minhas ações e comecei a compreender porque a minha filha se comportava daquele jeito. Hoje, agradeço a Amélia, ELA MUDOU A MINHA VIDA, CLAREOU MEUS PENSAMENTOS E ME AJUDOU A TER MAIS ENTENDIMENTO COM MEUS FAMILIARES. Estou mais feliz, aumentei a minha fé, porque o método da Amélia busca desenvolver várias áreas da vida, até achar a raiz do problema mais latente, estou a cada dia melhor, gratidão, gratidão Amélia por seu apoio e seu conhecimento.",
       rating: 5
     },
     {
-      name: "Carlos Oliveira", 
-      text: "A metodologia da Amélia transformou nossa relação familiar. Conseguimos criar um ambiente mais harmonioso e cheio de amor.",
+      name: "Queli Oliver", 
+      text: "Oi, meu nome é Queli e sou professora, HOJE ESTOU AQUI PARA FALAR COMO A METODOLOGIA DA AMÉLIA, MUDOU MINHA FORMA DE VIVER E DE DAR AULAS. Sempre fui muito dedicada a tudo que fazia, mas sentia algo que não conseguia entender ou ver, eram como grandes amarras que me impediam de ir além, de soltar, de criar, de ser eu de verdade. Em casa não sabia como atender meu filho que é autista, e minhas aulas não era plenas, não conseguia acessar toda a potencialidade dos alunos, tinha dificuldade de entender os diversos comportamentos e fazer com que a minha turma tivesse um melhor aproveitamento. FOI ENTÃO QUE TIVE O PRIVILÉGIO DE TER ACESSO A METODOLOGIA DA AMÉLIA, ONDE PUDE APRENDER A ME EXPRESSAR A ENTENDER QUE CADA TIPO DE COMPORTAMENTO TAMBÉM É UMA FORMA DE SE EXPRESSAR, TAMBÉM PUDE AJUDAR MEU FILHO QUE TINHA CRISES, COM TODAS AS TÉCNICAS QUE APRENDI NA METODOLOGIA. Minhas aulas começam a ter mais resultados porque eu comecei a entender porque me sentia presa e comecei a liberar, equilibrar, curar o que precisava. Comecei a conhecer melhor meu filho e ajudar as professoras na escola. Tudo começou a ficar melhor.",
       rating: 5
     },
     {
-      name: "Ana Paula",
-      text: "Incrível como pequenas mudanças na forma de educar podem gerar resultados tão positivos. Recomendo para todos os pais!",
+      name: "Ana Caroline Ribeiro",
+      text: "Minha experiência nesse dia de imersão com a Amélia foi incrível, me chamo Anna e foi um misto de sentimentos, dores, angustias, gratidão, fé e após um alivio muito grande. TIVE A OPORTUNIDADE DE ME CONECTAR COM A SUA FILOSOFIA DE VIDA, A SUA METODOLOGIA QUE VAI MUITO ALÉM DO QUE OS OLHOS PODEM VER, MAS ATINGE O INVISÍVEL, AQUILO QUE O CORAÇÃO SENTE, MAS NÃO COMPREENDE. Considero como uma grande vitória ter conseguido olhar para mim, olhar para minha criança, reconhecer minhas qualidades e olhar com carinho para tudo o que passei e que de alguma forma podem estar bloqueado muitas coisas na minha vida ou me fazendo repetir padrões. Sei que ainda tenho muito o que trabalhar para me libertar totalmente, mas pude melhorar meu autoconhecimento com todas as práticas que realizei e a partir disso seguir com mais clareza de quem eu sou e como posso ser uma pessoa melhor e mais produtiva, pois percebi que relaxei e algumas questões voltaram, alguns medos e a ansiedade também. APROVEITO PARA RECOMENDAR PARA TODOS QUE DESEJAM CRESCER E EVOLUIR COMO PESSOA A FAZER A IMERSÃO, POIS COM CERTEZA VAI TRANSFORMAR A SUA VIDA. Agradeço muito Amélia por essa oportunidade, e vou continuar buscando a minha cura, a minha essência, o meu propósito de vida. Gratidão! ",
+      rating: 5
+    },
+    {
+      name: "Juliana Sherer",
+      text: "Nossos caminhos como pais, no entanto, não são simples, e nem sempre será fácil — cada criança, cada família carrega desafios únicos, que por vezes me fizeram temer julgamentos como mãe ou ter que passar por cima de grandes barreiras. Mas foi justamente aí que Amélia apareceu, com seu olhar sensível e humano, fazendo exatamente o oposto do que eu temia: acolheu. Quando eu temia por críticas, Amélia estendeu a mão. Acolheu com respeito, escuta e confiança. É bonito ver o quanto minha filha se inspira nela. A professora Amélia a ajudou a enxergar o mundo por outras lentes, a encarar os próprios desafios com coragem e a perceber valor em cada pequeno avanço. Em muitos momentos, percebo que minha filha carrega, em sua fala e postura, traços da generosidade e da visão de mundo que aprendeu com sua professora. Testemunhei não apenas o profissionalismo da Amélia, mas sua enorme capacidade de ver além. Sua abordagem respeitosa, fundamentada por uma sólida formação e um coração generoso, fez toda a diferença para minha filha — e para nossa família. E talvez o mais bonito seja perceber que, além de professora dedicada, Amélia também é mãe. Alguém que compreende com profundidade o valor do cuidado, da escuta e da responsabilidade de formar pessoas. Amélia não tem somente uma metodologia transformadora, ela ensina coragem, disciplina, autoestima. Estimula o crescimento, o esforço, o florescer de cada um. Mostra que cada passo — mesmo os mais trêmulos — tem valor. Hoje, o que sinto é uma imensa gratidão por esse reencontro da vida, por tudo que Amélia representa para minha filha — e para mim. Que sorte reencontrar alguém tão transformador.",
       rating: 5
     }
   ];
 
   const faqItems = [
     {
-      question: "Qual a duração do evento?",
-      answer: "O evento tem duração de 3 horas, com intervalo incluído."
-    },
-    {
       question: "Preciso ter conhecimento prévio em psicologia?",
-      answer: "Não! O conteúdo é apresentado de forma didática e acessível para todos os pais."
-    },
-    {
-      question: "Haverá certificado de participação?",
-      answer: "Sim, todos os participantes receberão certificado digital de participação."
+      answer: "Não! O conteúdo é apresentado de forma didática e acessível para todos."
     },
     {
       question: "O evento é presencial ou online?",
-      answer: "O evento será realizado presencialmente, permitindo participação de qualquer lugar."
+      answer: "O evento será realizado presencialmente, em Florianópolis, no dia 30/08."
     }
   ];
 
@@ -93,8 +94,8 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="lg:text-2xl text-1xl font-bold" style={{ color: '#082144' }}>
-            Raízes Emocionais
+          <div className="lg:text-2xl text-1xl font-bold" style={{ color: '#fff' }}>
+            Além do Óbvio
           </div>
           <Button 
             className="text-white font-semibold hover:scale-105 transition-transform px-8 py-3 rounded-full"
@@ -110,32 +111,46 @@ const Index = () => {
       <section 
         className="min-h-screen flex items-center relative bg-cover bg-center"
         style={{ 
-          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.7)), url("https://images.pexels.com/photos/4098152/pexels-photo-4098152.jpeg")'
+          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("../../public/img-uploads/heroBackground.png")'
         }}
       >
         <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
           <div className="max-w-2xl">
             <h1 className=" lg:text-6xl text-4xl font-bold text-white mb-6 leading-tight">
-              Descubra as <span className="text-yellow-400">Raízes Emocionais</span> do Comportamento Infantil
+              Como blindar a mente e <span className="text-yellow-400">proteger as emoções das crianças para terem sucesso na vida</span> com Amélia Skiba
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Transforme sua relação com seus filhos aprendendo como o comportamento deles reflete sua forma de educar. 
-              Uma jornada única de autoconhecimento e conexão familiar.
+              O comportamento do seu filho é um reflexo da sua forma de educar – e mudar começa com você.
+              Descubra o que está por trás do comportamento das crianças, aquilo que você não enxerga, que está além do obvio e transforme seu filho numa verdadeira máquina de sucesso.
             </p>
             <Button 
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
               style={{ backgroundColor: '#c39f12' }}
             >
-              Quero Participar!
+              Fazer aplicação
               <Ticket className="w-6 h-6 ml-3" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Sobre o Evento */}
       <section className="py-20">
+        <div className="container mx-auto px-6">
+            <div className="grid justify-center items-center">
+              <h2 className="text-4xl font-bold mb-6 text-center" style={{ color: '#082144' }}>
+                Sinta como será a Experiência da Imersão Além do Óbvio
+              </h2>
+              <video width="640" height="360" controls className="m-auto">
+                <source src="../../public/img-uploads/video.mp4" type="video/mp4"/>
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+            </div>
+        </div>
+      </section>
+
+      {/* Sobre o Evento */}
+      <section className="py-20 bg-[#fff]">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -225,15 +240,12 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
-              O que você vai aprender
+              O que você vai viver nesse dia
             </h2>
-            <p className="text-xl text-gray-600">
-              Conteúdo prático e transformador baseado em anos de experiência
-            </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {content.map((item, index) => (
-              <div key={index} className="flex items-start gap-4 p-6 rounded-xl bg-gray-50 shadow-md">
+              <div key={index} className="flex items-center gap-4 p-6 rounded-xl bg-gray-50 shadow-md">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
                      style={{ backgroundColor: '#274375' }}>
                   <span className="text-white font-bold">{index + 1}</span>
@@ -253,12 +265,12 @@ const Index = () => {
               O que os pais estão dizendo
             </h2>
             <p className="text-xl text-gray-600">
-              Histórias reais de transformação familiar
+              Muitas famílias já foram impactadas pela metodologia Educação Expressiva - Educar pelo Sentir, você pode ser a próxima, confira a baixo alguns depoimentos
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-lg">
+              <Card key={index} className="grid border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -289,20 +301,20 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
                 <img 
-                  src="/img-uploads/c6af6fb1-8b8b-4d85-8f63-21678023f36c.png" 
+                  src="/img-uploads/amelia_e_filha.jpg" 
                   alt="Amélia Cristina Skiba"
                   className="rounded-2xl shadow-2xl w-full object-cover"
                 />
               </div>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#082144' }}>
-                    Uma jornada de 25 anos dedicada às crianças
-                  </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Amélia, 37 anos, mãe da pequena Anastácia de 4 anos, dedica sua vida ao mundo infantil. 
-                    Com 25 anos de experiência com crianças e 15 anos como professora da rede municipal, 
-                    ela é a mente por trás da Amélia Skiba Corporation.
+                    Há 25 anos trabalho na educação infantil e, ao longo desse tempo, vim percebendo enormes dificuldades de aprendizado das crianças, grandiosos problemas de relacionamento entre as famílias, muitos professores adoecendo e desistindo, resultando em uma educação colapsada, crianças frustradas, rebeldes e famílias arrasadas.
+                    <br/>
+                    <b>E quem é o culpado?</b>
+                    <br/>
+                    De uns anos para cá, esse assunto virou a minha cabeça e é o que me move para poder mostrar o que está além do óbvio, aquilo que ninguém está vendo, mas sentindo. Preciso te contar qual a fórmula para fazer a mente do seu filho ser de um campeão e como as emoções podem influenciar no sucesso dele positivamente ou negativamente.  
+                    Juntei todo o conhecimento da minha formação acadêmica e minhas formações terapêuticas e desenvolvi minha metodologia: A Educação Expressiva - O Educar pelo Sentir. Foi para aliviar essas dores invisíveis que a <b style={{color: '#c39f12'}}>IMERSÃO ALÉM DO ÓBVIO</b> foi tão almejada e agora toma forma na sua 1ª Edição.
                   </p>
                 </div>
                 <div className="grid gap-3">
@@ -319,10 +331,6 @@ const Index = () => {
                     Terapeuta Multidimensional
                   </Badge>
                 </div>
-                <p className="text-gray-700 leading-relaxed font-medium">
-                  "Minha missão é ensinar as pessoas a ouvir através do coração, 
-                  transformando a educação em uma experiência de amor e conexão."
-                </p>
               </div>
             </div>
           </div>
@@ -338,8 +346,7 @@ const Index = () => {
             Esta é uma Oportunidade Única!
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Não perca a chance de transformar sua relação familiar e descobrir as raízes emocionais 
-            que influenciam o comportamento dos seus filhos. Vagas limitadas!
+            Vamos juntos aprender a blindar a mente das crianças e a proteger as emoções, ouvindo pelo coração
           </p>
           <div className="space-y-4">
             <Button 
@@ -399,7 +406,7 @@ const Index = () => {
         <div className="w-full">
           <div className="flex flex-col items-center justify-center px-6 space-y-4 lg:space-y-0">
             <p className="text-white/60 lg:left-[1.5rem] text-center lg:absolute md:relative">
-              © 2025 Raízes Emocionais | Todos os direitos reservados.
+              © 2025 Além do óbvio | Todos os direitos reservados.
             </p>
             <p className="text-white/30 text-xs text-center">
               Desenvolvido by Somma Marketing
