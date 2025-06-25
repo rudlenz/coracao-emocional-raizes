@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -203,7 +202,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Benefícios */}
+      {/* Benefícios - com conteúdo movido */}
       <section className="py-20" style={{ 
         background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
       }}>
@@ -212,10 +211,24 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-4 text-white">
               Venha aprender a ouvir com o coração!
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12">
               Após participar deste evento, você será capaz de transformar completamente sua relação familiar
             </p>
           </div>
+          
+          {/* Conteúdo movido da seção "O que você vai viver nesse dia" */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {content.map((item, index) => (
+              <div key={index} className="flex items-center gap-4 p-6 rounded-xl bg-white/10 backdrop-blur-sm shadow-md">
+                <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-[#c39f12]">
+                  <span className="text-white font-bold">{index + 1}</span>
+                </div>
+                <p className="font-medium text-white">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Benefícios originais */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon;
@@ -337,7 +350,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Final */}
+      {/* CTA Final - com informações do ticket */}
       <section className="py-20" style={{ 
         background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
       }}>
@@ -345,9 +358,25 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Esta é uma Oportunidade Única!
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Vamos juntos aprender a blindar a mente das crianças e a proteger as emoções, ouvindo pelo coração
-          </p>
+          
+          {/* Informações do ticket */}
+          <div className="max-w-2xl mx-auto mb-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <h3 className="text-2xl font-bold text-white mb-6">Investimento</h3>
+              
+              <div className="space-y-4 text-white/90 text-lg">
+                <p className="font-semibold">30 de agosto (sábado)</p>
+                <p className="font-semibold">Evento Presencial</p>
+                <p className="text-yellow-400 font-bold text-xl">
+                  Corra! Pois ainda temos somente 20 vagas restantes
+                </p>
+                <div className="text-4xl font-bold text-yellow-400 mt-6">
+                  R$ 67,00
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="space-y-4">
             <Button 
               size="lg" 
