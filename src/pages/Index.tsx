@@ -108,13 +108,16 @@ const Index = () => {
 
       {/* Hero Section */}
       <section 
-        className="min-h-screen flex items-center relative bg-cover bg-center"
+        className="min-h-screen flex items-center relative bg-cover bg-position-[70%]"
         style={{ 
           backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("../../public/img-uploads/heroBackground.png")'
         }}
       >
         <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
           <div className="max-w-2xl">
+            <Badge className="mb-4 text-white" style={{ backgroundColor: 'transparent', border: '1px solid #fff' }}>
+              30/08 Em Florianópolis
+            </Badge>
             <h1 className=" lg:text-6xl text-4xl font-bold text-white mb-6 leading-tight">
               Como blindar a mente e <span className="text-yellow-400">proteger as emoções das crianças para terem sucesso na vida</span> com Amélia Skiba
             </h1>
@@ -136,15 +139,20 @@ const Index = () => {
 
       <section className="py-20">
         <div className="container mx-auto px-6">
-            <div className="grid justify-center items-center">
-              <h2 className="text-4xl font-bold mb-6 text-center" style={{ color: '#082144' }}>
-                Sinta como será a Experiência da Imersão Além do Óbvio
-              </h2>
-              <video width="640" height="360" controls className="m-auto">
-                <source src="../../public/img-uploads/video.mp4" type="video/mp4"/>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <video width="390" controls className="mx-auto rounded-xl shadow-lg">
+                <source src="/img-uploads/video.mp4" type="video/mp4" />
                 Seu navegador não suporta vídeo HTML5.
               </video>
             </div>
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-start" style={{ color: '#082144' }}>
+                Sinta como será a Experiência da Imersão Além do Óbvio
+              </h2>
+              <p className="text-lg text-start text-gray-700 max-w-3xl mx-auto mb-8"> Mais do que um evento, essa imersão é um convite para enxergar além das dificuldades visíveis da educação e mergulhar nas emoções que moldam o desenvolvimento infantil. Aqui, você vai sentir na prática como o educar pelo sentir transforma vidas — começando pela sua. Permita-se viver uma experiência única, profunda e transformadora. </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -216,18 +224,6 @@ const Index = () => {
             </p>
           </div>
           
-          {/* Conteúdo movido da seção "O que você vai viver nesse dia" */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {content.map((item, index) => (
-              <div key={index} className="flex items-center gap-4 p-6 rounded-xl bg-white/10 backdrop-blur-sm shadow-md">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-[#c39f12]">
-                  <span className="text-white font-bold">{index + 1}</span>
-                </div>
-                <p className="font-medium text-white">{item}</p>
-              </div>
-            ))}
-          </div>
-
           {/* Benefícios originais */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {
@@ -356,23 +352,22 @@ const Index = () => {
       }}>
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Esta é uma Oportunidade Única!
+            Investimento
           </h2>
           
           {/* Informações do ticket */}
           <div className="max-w-2xl mx-auto mb-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-6">Investimento</h3>
-              
               <div className="space-y-4 text-white/90 text-lg">
-                <p className="font-semibold">30 de agosto (sábado)</p>
+                <p className="text-2xl font-semibold">30 de agosto (sábado)</p>
                 <p className="font-semibold">Evento Presencial</p>
-                <p className="text-yellow-400 font-bold text-xl">
-                  Corra! Pois ainda temos somente 20 vagas restantes
-                </p>
                 <div className="text-4xl font-bold text-yellow-400 mt-6">
                   R$ 67,00
                 </div>
+
+                <p className="text-yellow-400 font-bold text-sm">
+                  Corra! Somente 20 vagas restantes
+                </p>
               </div>
             </div>
           </div>
@@ -382,7 +377,7 @@ const Index = () => {
               size="lg" 
               className="bg-yellow-400 text-gray-900 font-bold text-xl lg:px-12 py-6 hover:bg-yellow-300 transition-colors shadow-xl"
             >
-              Garantir Minha Vaga Agora
+              Garantir Minha Aplicação
             </Button>
           </div>
         </div>
