@@ -108,7 +108,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section 
-        className="min-h-screen flex items-center relative bg-cover md:bg-[position:70%]"
+        className="min-h-screen flex items-center relative bg-cover bg-[position:70%]"
         style={{ 
           backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/heroBackground.png")'
         }}
