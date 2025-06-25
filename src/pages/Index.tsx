@@ -110,7 +110,7 @@ const Index = () => {
       <section 
         className="min-h-screen flex items-center relative bg-cover md:bg-[position:70%]"
         style={{ 
-          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("../../public/img-uploads/heroBackground.png")'
+          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/heroBackground.png")'
         }}
       >
         <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
