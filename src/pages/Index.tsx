@@ -84,7 +84,7 @@ const Index = () => {
     },
     {
       question: "O evento é presencial ou online?",
-      answer: "O evento será realizado presencialmente, em Florianópolis, no dia 30/08."
+      answer: "O evento será realizado presencialmente, em Florianópolis, no dia 23/08."
     }
   ];
 
@@ -108,7 +108,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section 
-        className="min-h-screen flex items-center relative bg-cover bg-[position:70%]"
+        className="min-h-screen flex items-center relative bg-cover"
         style={{ 
           backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/heroBackground.png")'
         }}
@@ -116,7 +116,7 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
           <div className="max-w-2xl">
             <Badge className="mb-4 text-white" style={{ backgroundColor: 'transparent', border: '1px solid #fff' }}>
-              30/08 Em Florianópolis
+              23/08 Em Florianópolis
             </Badge>
             <h1 className=" lg:text-6xl text-4xl font-bold text-white mb-6 leading-tight">
               Como blindar a mente e <span className="text-yellow-400">proteger as emoções das crianças para terem sucesso na vida</span> com Amélia Skiba
@@ -162,7 +162,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img 
-                src="/img-uploads/heart.png" 
+                src="/img-uploads/ameliaPhoto.png" 
                 alt="Raízes emocionais - Arte representativa"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
@@ -338,6 +338,12 @@ const Index = () => {
                   </Badge>
                   <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
                     Terapeuta Multidimensional
+                  </Badge>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
+                    Especialista em Gestão das Emoções
+                  </Badge>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
+                    Especialista em Meditação Científica
                   </Badge>
                 </div>
               </div>
