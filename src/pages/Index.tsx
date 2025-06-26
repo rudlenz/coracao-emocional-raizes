@@ -141,10 +141,11 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <video width="390" controls className="mx-auto rounded-xl shadow-lg">
-                <source src="/img-uploads/video.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeo HTML5.
-              </video>
+              <img 
+                src="/img-uploads/ameliaPhoto2.jpg" 
+                alt="Raízes emocionais - Arte representativa"
+                className="rounded-2xl shadow-2xl w-full object-cover"
+              />
             </div>
             <div>
               <h2 className="text-4xl font-bold mb-6 text-start" style={{ color: '#082144' }}>
@@ -161,13 +162,11 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img 
-                src="/img-uploads/ameliaPhoto.png" 
-                alt="Raízes emocionais - Arte representativa"
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 rounded-full flex items-center justify-center shadow-xl"
-                   style={{ backgroundColor: '#274375' }}>
+              <video width="420" controls className="mx-auto rounded-xl shadow-lg">
+                <source src="/img-uploads/video.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeo HTML5.
+              </video>
+              <div className="absolute -bottom-6 -right-0 w-24 h-24 rounded-full flex items-center justify-center shadow-xl" style={{ backgroundColor: '#274375', marginRight: '60px' }}>
                 <Heart className="w-12 h-12 text-white" />
               </div>
             </div>
