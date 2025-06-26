@@ -142,7 +142,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img 
-                src="/img-uploads/ameliaPhoto2.jpg" 
+                src="/img-uploads/ameliaPhoto.png" 
                 alt="Raízes emocionais - Arte representativa"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
