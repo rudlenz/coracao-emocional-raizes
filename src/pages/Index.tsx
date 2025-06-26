@@ -364,7 +364,7 @@ const Index = () => {
           <div className="max-w-2xl mx-auto mb-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <div className="space-y-4 text-white/90 text-lg">
-                <p className="text-2xl font-semibold">30 de agosto (sábado)</p>
+                <p className="text-2xl font-semibold">23 de agosto (sábado)</p>
                 <p className="font-semibold">Evento Presencial</p>
                 <div className="text-4xl font-bold text-yellow-400 mt-6">
                   R$ 67,00
