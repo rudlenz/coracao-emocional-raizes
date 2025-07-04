@@ -98,6 +98,7 @@ const Index = () => {
           <Button 
             className="text-white font-semibold hover:scale-105 transition-transform px-8 py-6 rounded-full"
             style={{ backgroundColor: '#c39f12', border: '1px solid #fff' }}
+            onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
           >
             Garantir vaga agora
             <Ticket className="w-5 h-5 ml-2" />
@@ -128,6 +129,7 @@ const Index = () => {
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
               style={{ backgroundColor: '#c39f12', border: '1px solid #fff' }}
+              onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
             >
               Garantir vaga agora
               <Ticket className="w-6 h-6 ml-3" />
@@ -277,6 +279,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
               style={{ backgroundColor: '#c39f12', marginTop: '42px' }}
+              onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
             >
               Garantir vaga agora
               <Ticket className="w-6 h-6 ml-3" />
@@ -313,22 +316,32 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
         </div>
       </section>
 
-      {/* Nova seção com foto e texto */}
       <section className="py-20" style={{ backgroundColor: '#f0efee' }}>
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <img 
-                src="/img-uploads/ameliaPhoto2.jpg" 
-                alt="Amélia e criança"
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
-            </div>
-            <div className="text-center lg:text-left">
-              <h2 className="text-4xl font-bold mb-8 leading-relaxed" style={{ color: '#082144' }}>
+            
+            {/* Texto primeiro no mobile */}
+            <div className="text-center lg:text-left order-1 lg:order-2">
+              <h2
+                className="text-4xl font-bold mb-8 leading-relaxed"
+                style={{ color: '#082144' }}
+              >
                 Vamos juntos aprender a blindar a mente das crianças e a proteger as emoções, ouvindo pelo coração.
               </h2>
             </div>
+
+            {/* Imagem depois no mobile */}
+            <div className="relative order-2 lg:order-1">
+              <div
+                className="bg-[url(/img-uploads/ameliaPhoto2.jpg)] rounded-2xl shadow-2xl w-full object-cover"
+                style={{
+                  backgroundSize: 'cover',
+                  height: '600px',
+                  backgroundPosition: 'center',
+                }}
+              />
+            </div>
+
           </div>
         </div>
       </section>
@@ -362,6 +375,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
                   <Button 
                     size="lg" 
                     className="bg-yellow-400 text-gray-900 font-bold text-xl px-8 py-4 hover:bg-yellow-300 transition-colors shadow-xl w-full mt-6"
+                    onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
                   >
                     Garantir Minha Vaga
                     <Ticket className="w-5 h-5 ml-2" />
