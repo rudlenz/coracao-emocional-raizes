@@ -97,7 +97,7 @@ const Index = () => {
           <div className="lg:text-2xl text-1xl font-bold" style={{ color: '#fff' }}/>
           <Button 
             className="text-white font-semibold hover:scale-105 transition-transform px-8 py-6 rounded-full"
-            style={{ backgroundColor: '#c39f12', border: '1px solid #fff' }}
+            style={{ backgroundColor: '#F4A261', border: '1px solid #fff' }}
             onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
           >
             Garantir vaga agora
@@ -111,7 +111,7 @@ const Index = () => {
         className="min-h-screen flex items-center relative bg-cover"
         style={{ 
           paddingTop: '60px',
-          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/heroBackground.png")'
+          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/hero1.png")'
         }}
       >
         <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
@@ -128,7 +128,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
-              style={{ backgroundColor: '#c39f12', border: '1px solid #fff' }}
+              style={{ backgroundColor: '#F4A261', border: '1px solid #fff' }}
               onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
             >
               Garantir vaga agora
@@ -157,12 +157,12 @@ const Index = () => {
                 <source src="/img-uploads/video.mp4" type="video/mp4" />
                 Seu navegador não suporta vídeo HTML5.
               </video>
-              <div className="absolute -bottom-6 -right-0 w-24 h-24 rounded-full flex items-center justify-center shadow-xl" style={{ backgroundColor: '#274375', marginRight: '-25px' }}>
+              <div className="absolute -bottom-6 -right-0 w-24 h-24 rounded-full flex items-center justify-center shadow-xl" style={{ backgroundColor: '#E6615C', marginRight: '-25px' }}>
                 <Heart className="w-12 h-12 text-white" />
               </div>
             </div>
             <div>
-              <Badge className="mb-4 text-white" style={{ backgroundColor: '#446cad' }}>
+              <Badge className="mb-4 text-white" style={{ backgroundColor: '#56926F' }}>
                 Evento Exclusivo
               </Badge>
               <h2 className="text-4xl font-bold mb-6 text-start" style={{ color: '#082144' }}>
@@ -199,14 +199,14 @@ const Index = () => {
       </section>
 
       {/* Sobre a Palestrante */}
-      <section className="py-20" style={{background: 'white'}}>
+      <section className="py-20" style={{background: '#56926F'}}>
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
+              <h2 className="text-4xl font-bold mb-4" style={{ color: '#fff' }}>
                 Conheça Amélia Cristina Skiba
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-white">
                 Especialista em desenvolvimento infantil e criadora da metodologia Educação Expressiva
               </p>
             </div>
@@ -220,7 +220,7 @@ const Index = () => {
               </div>
               <div className="space-y-6">
                 <div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-white leading-relaxed">
                     Há 25 anos trabalho na educação infantil e ao longo desses anos, vim percebendo enormes dificuldades de aprendizado das crianças, grandiosos problemas de relacionamento entre as famílias, estou vendo muitos professores adoecerem,  resultando em uma educação colapsada, professores desistindo, crianças frustradas, rebeldes e famílias arrasadas.
                     <br/>
                     <b>E quem é o culpado?</b>
@@ -230,22 +230,22 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
                   </p>
                 </div>
                 <div className="grid gap-3">
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
+                  <Badge className="w-fit text-[#56926F]" style={{ backgroundColor: '#fff' }}>
                     Mestre em Desenvolvimento Infantil
                   </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
+                  <Badge className="w-fit text-[#56926F]" style={{ backgroundColor: '#fff' }}>
                     Perita em Programação Neurolinguística
                   </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#446cad' }}>
+                  <Badge className="w-fit text-[#56926F]" style={{ backgroundColor: '#fff' }}>
                     Especialista em Neuropsicologia e Aprendizagem
                   </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
+                  <Badge className="w-fit text-[#56926F]" style={{ backgroundColor: '#fff' }}>
                     Terapeuta Multidimensional
                   </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
+                  <Badge className="w-fit text-[#56926F]" style={{ backgroundColor: '#fff' }}>
                     Especialista em Gestão das Emoções
                   </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
+                  <Badge className="w-fit text-[#56926F]" style={{ backgroundColor: '#fff' }}>
                     Especialista em Meditação Científica
                   </Badge>
                 </div>
@@ -268,7 +268,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
             {content.map((item, index) => (
               <div key={index} className="flex items-center gap-4 p-6 rounded-xl bg-gray-50 shadow-md">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                     style={{ backgroundColor: '#274375' }}>
+                     style={{ backgroundColor: '#E6615C' }}>
                   <span className="text-white font-bold">{index + 1}</span>
                 </div>
                 <p className="font-medium" style={{ color: '#082144' }}>{item}</p>
@@ -278,7 +278,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
           <Button 
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
-              style={{ backgroundColor: '#c39f12', marginTop: '42px' }}
+              style={{ backgroundColor: '#F4A261', marginTop: '42px' }}
               onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
             >
               Garantir vaga agora
@@ -288,13 +288,15 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
       </section>
 
       {/* Depoimentos */}
-      <section className="py-20" style={{ backgroundColor: 'white' }}>
+      <section className="py-20" style={{
+          background: 'linear-gradient(135deg, #56926f 0%,rgb(43, 92, 64) 100%)' 
+        }}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#fff' }}>
               O que os pais estão dizendo
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-white">
               Muitas famílias já foram impactadas pela metodologia Educação Expressiva - Educar pelo Sentir, você pode ser a próxima, confira a baixo alguns depoimentos
             </p>
           </div>
@@ -333,11 +335,11 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
             {/* Imagem depois no mobile */}
             <div className="relative order-2 lg:order-1">
               <div
-                className="bg-[url(/img-uploads/ameliaPhoto2.jpg)] rounded-2xl shadow-2xl w-full object-cover"
+                className="bg-[url(/img-uploads/ameliaPhoto.jpg)] rounded-2xl shadow-2xl w-full object-cover"
                 style={{
                   backgroundSize: 'cover',
                   height: '600px',
-                  backgroundPosition: 'center',
+                  backgroundPositionY: '20%',
                 }}
               />
             </div>
@@ -348,7 +350,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
 
       {/* CTA Final - com informações do ticket */}
       <section className="py-20" style={{ 
-        background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
+        background: 'linear-gradient(135deg, #56926f 0%,rgb(43, 92, 64) 100%)' 
       }}>
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
@@ -415,20 +417,20 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
       <footer
         className="py-6"
         style={{
-          background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)'
+          background: '#fff' 
         }}
       >
         <div className="w-full">
           <div className="flex flex-col items-center justify-center px-6 space-y-4 lg:space-y-0">
-            <p className="text-white/60 lg:left-[1.5rem] text-center lg:absolute md:relative">
+            <p className="text-[#56926f]/60 lg:left-[1.5rem] text-center lg:absolute md:relative">
               © 2025 Além do óbvio | Todos os direitos reservados.
             </p>
-            <p className="text-white/30 text-xs text-center">
+            <p className="text-[#56926f]/80 text-xs text-center">
               Desenvolvido by Somma Marketing
             </p>
             <Button
               onClick={scrollToHero}
-              className="lg:absolute lg:right-[1.5rem] md:relative bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors flex items-center gap-2"
+              className="lg:absolute lg:right-[1.5rem] md:relative bg-[#56926f]/10 text-[#56926f] border border-[#56926f]/20 hover:bg-[#56926f]/20 transition-colors flex items-center gap-2"
             >
               <CircleArrowUp className="w-5 h-5" />
               Voltar ao início
