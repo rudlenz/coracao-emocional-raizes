@@ -313,8 +313,24 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
         </div>
       </section>
 
-      <section>
-        
+      {/* Nova seção com foto e texto */}
+      <section className="py-20" style={{ backgroundColor: '#f0efee' }}>
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img 
+                src="/img-uploads/ameliaPhoto2.jpg" 
+                alt="Amélia e criança"
+                className="rounded-2xl shadow-2xl w-full object-cover"
+              />
+            </div>
+            <div className="text-center lg:text-left">
+              <h2 className="text-4xl font-bold mb-8 leading-relaxed" style={{ color: '#082144' }}>
+                Vamos juntos aprender a blindar a mente das crianças e a proteger as emoções, ouvindo pelo coração.
+              </h2>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* CTA Final - com informações do ticket */}
