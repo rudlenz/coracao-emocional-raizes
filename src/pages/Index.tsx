@@ -111,7 +111,7 @@ const Index = () => {
         className="min-h-screen flex items-center relative bg-cover"
         style={{ 
           paddingTop: '60px',
-          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/hero1.png")'
+          backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/hero2.png")'
         }}
       >
         <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
