@@ -253,37 +253,6 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
         </div>
       </section>
 
-      {/* <section className="py-20" style={{ 
-        background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
-      }}>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-white">
-              Venha aprender a ouvir com o coração!
-            </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12">
-              Após participar deste evento, você será capaz de transformar completamente sua relação familiar
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => {
-              const IconComponent = benefit.icon;
-              return (
-                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-white/10 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-[#c39f12]">
-                      <IconComponent className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="font-bold text-white mb-2">{benefit.title}</h3>
-                    <p className="text-white/80 text-sm">{benefit.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section> */}
-
       {/* Conteúdo */}
       <section className="py-20">
         <div className="container mx-auto px-6" style={{justifyItems: 'center'}}>
@@ -357,30 +326,57 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
             Investimento
           </h2>
           
-          {/* Informações do ticket */}
-          <div className="max-w-2xl mx-auto mb-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="space-y-4 text-white/90 text-lg">
-                <p className="text-2xl font-semibold">23 de agosto (sábado)</p>
-                <p className="font-semibold">Evento Presencial</p>
-                <div className="text-4xl font-bold text-yellow-400 mt-6">
-                  R$ 67,00
+          {/* Informações dos lotes */}
+          <div className="max-w-4xl mx-auto mb-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Lote 1 - Disponível */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 relative">
+                <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1">
+                  LOTE 1 - DISPONÍVEL
+                </Badge>
+                <div className="space-y-4 text-white/90 text-lg pt-4">
+                  <p className="text-2xl font-semibold">23 de agosto (sábado)</p>
+                  <p className="font-semibold">Evento Presencial</p>
+                  <div className="text-4xl font-bold text-yellow-400 mt-6">
+                    R$ 67,00
+                  </div>
+                  <p className="text-yellow-400 font-bold text-sm">
+                    Corra! Temos somente 20 vagas restantes!
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="bg-yellow-400 text-gray-900 font-bold text-xl px-8 py-4 hover:bg-yellow-300 transition-colors shadow-xl w-full mt-6"
+                  >
+                    Garantir Minha Vaga
+                    <Ticket className="w-5 h-5 ml-2" />
+                  </Button>
                 </div>
+              </div>
 
-                <p className="text-yellow-400 font-bold text-sm">
-                  Corra! Temos somente 20 vagas restantes!
-                </p>
+              {/* Lote 2 - Esgotado/Informativo */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 relative opacity-75">
+                <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gray-500 text-white px-4 py-1">
+                  LOTE 2 - PRÓXIMO
+                </Badge>
+                <div className="space-y-4 text-white/70 text-lg pt-4">
+                  <p className="text-2xl font-semibold">23 de agosto (sábado)</p>
+                  <p className="font-semibold">Evento Presencial</p>
+                  <div className="text-4xl font-bold text-gray-400 mt-6">
+                    R$ 97,00
+                  </div>
+                  <p className="text-gray-400 font-bold text-sm">
+                    Próximo lote disponível em breve
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="bg-gray-600 text-gray-300 font-bold text-xl px-8 py-4 cursor-not-allowed w-full mt-6"
+                    disabled
+                  >
+                    Próximo Lote
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="space-y-4">
-            <Button 
-              size="lg" 
-              className="bg-yellow-400 text-gray-900 font-bold text-xl lg:px-12 py-6 hover:bg-yellow-300 transition-colors shadow-xl"
-            >
-              Garantir Minha Aplicação
-            </Button>
           </div>
         </div>
       </section>
