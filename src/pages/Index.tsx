@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Users, BookOpen, Target, CheckCircle, Star, ArrowUp, MessageCircle, Ticket, Brain, Shield, Lightbulb, Compass, Zap, CircleArrowUp } from "lucide-react";
+import { Heart, Users, BookOpen, Target, CheckCircle, Star, ArrowUp, MessageCircle, Ticket, Brain, Shield, Lightbulb, Compass, Zap, CircleArrowUp, CalendarMinus2 } from "lucide-react";
 
 const Index = () => {
   const scrollToHero = () => {
@@ -93,14 +93,13 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="lg:text-2xl text-1xl font-bold" style={{ color: '#fff' }}>
-            Além do Óbvio
-          </div>
+          <div className="bg-[url(/img-uploads/logoToHero.png)] ..." style={{backgroundSize: 'cover', width: '210px', height: '70px', backgroundPosition: 'center'}}/>
+          <div className="lg:text-2xl text-1xl font-bold" style={{ color: '#fff' }}/>
           <Button 
-            className="text-white font-semibold hover:scale-105 transition-transform px-8 py-3 rounded-full"
-            style={{ backgroundColor: '#c39f12' }}
+            className="text-white font-semibold hover:scale-105 transition-transform px-8 py-6 rounded-full"
+            style={{ backgroundColor: '#c39f12', border: '1px solid #fff' }}
           >
-            Garanta sua Vaga
+            Garantir vaga agora
             <Ticket className="w-5 h-5 ml-2" />
           </Button>
         </div>
@@ -110,29 +109,40 @@ const Index = () => {
       <section 
         className="min-h-screen flex items-center relative bg-cover"
         style={{ 
+          paddingTop: '60px',
           backgroundImage: 'linear-gradient(rgb(8 33 68 / 48%), rgba(68, 108, 173, 0.05)), url("/img-uploads/heroBackground.png")'
         }}
       >
         <div className="container mx-auto px-6 lg:pt-20 pb-20 pt-40">
           <div className="max-w-2xl">
-            <Badge className="mb-4 text-white" style={{ backgroundColor: 'transparent', border: '1px solid #fff' }}>
-              23/08 Em Florianópolis
+            <Badge className="mb-4 text-white" style={{ backgroundColor: 'transparent', gap: '5px', border: '1px solid #fff' }}>
+              GARANTA SEU INGRESSO NO <b>LOTE 1</b>
             </Badge>
             <h1 className=" lg:text-6xl text-4xl font-bold text-white mb-6 leading-tight">
-              Como blindar a mente e <span className="text-yellow-400">proteger as emoções das crianças para terem sucesso na vida</span> com Amélia Skiba
+              Descubra como criar Filhos Emocionalmente Fortes e Destinados ao Sucesso
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              O comportamento do seu filho é um reflexo da sua forma de educar – e mudar começa com você.
-              Descubra o que está por trás do comportamento das crianças, aquilo que você não enxerga, que está além do obvio e transforme seu filho numa verdadeira máquina de sucesso.
+              Você vai sair com o passo a passo para evitar que seus filhos cresçam inseguros, ansiosos, viciados e despreparados para a vida real
             </p>
             <Button 
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
-              style={{ backgroundColor: '#c39f12' }}
+              style={{ backgroundColor: '#c39f12', border: '1px solid #fff' }}
             >
-              Fazer aplicação
+              Garantir vaga agora
               <Ticket className="w-6 h-6 ml-3" />
             </Button>
+
+            <div className="flex" style={{alignItems: 'center', gap: '12px', marginTop: '24px'}}>
+              <div style={{border: '1px solid white', borderRadius: '10px', height: 'fit-content', width: 'fit-content', padding: '15px'}}>
+                <CalendarMinus2 style={{color: 'white'}}/>
+              </div>
+              <div>
+                <p style={{color: 'white'}}>EVENTO PRESENCIAL | SÁBADO</p>
+                <p style={{color: '#a5a5a5', fontSize: 14}}>23 DE AGOSTO, 9H</p>
+                <p style={{color: '#a5a5a5', fontWeight: 'bold'}}>FLORIANÓPOLIS - SC</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -141,32 +151,11 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img 
-                src="/img-uploads/ameliaPhoto.png" 
-                alt="Raízes emocionais - Arte representativa"
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6 text-start" style={{ color: '#082144' }}>
-                Sinta como será a Experiência da Imersão Além do Óbvio
-              </h2>
-              <p className="text-lg text-start text-gray-700 max-w-3xl mx-auto mb-8"> Mais do que um evento, essa imersão é um convite para enxergar além das dificuldades visíveis da educação e mergulhar nas emoções que moldam o desenvolvimento infantil. Aqui, você vai sentir na prática como o educar pelo sentir transforma vidas — começando pela sua. Permita-se viver uma experiência única, profunda e transformadora. </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sobre o Evento */}
-      <section className="py-20 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <video width="420" controls className="mx-auto rounded-xl shadow-lg">
+              <video height="420" controls className="mx-auto rounded-xl shadow-lg">
                 <source src="/img-uploads/video.mp4" type="video/mp4" />
                 Seu navegador não suporta vídeo HTML5.
               </video>
-              <div className="absolute -bottom-6 -right-0 w-24 h-24 rounded-full flex items-center justify-center shadow-xl" style={{ backgroundColor: '#274375', marginRight: '60px' }}>
+              <div className="absolute -bottom-6 -right-0 w-24 h-24 rounded-full flex items-center justify-center shadow-xl" style={{ backgroundColor: '#274375', marginRight: '-25px' }}>
                 <Heart className="w-12 h-12 text-white" />
               </div>
             </div>
@@ -174,13 +163,10 @@ const Index = () => {
               <Badge className="mb-4 text-white" style={{ backgroundColor: '#446cad' }}>
                 Evento Exclusivo
               </Badge>
-              <h2 className="text-4xl font-bold mb-6" style={{ color: '#082144' }}>
-                Um Encontro Transformador para Pais Conscientes
+              <h2 className="text-4xl font-bold mb-6 text-start" style={{ color: '#082144' }}>
+                Sinta como será a Experiência da Imersão Pais Conscientes, Filhos Inabaláveis
               </h2>
-              <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                Este evento revolucionário vai revelar como os comportamentos dos seus filhos são reflexos diretos 
-                da sua forma de educar, oferecendo ferramentas práticas para criar uma conexão mais profunda e saudável.
-              </p>
+              <p className="text-lg text-start text-gray-700 max-w-3xl mx-auto mb-8"> Mais do que um evento, essa imersão é um convite para enxergar além das dificuldades visíveis da educação e mergulhar nas emoções que moldam o desenvolvimento infantil. Aqui, você vai sentir na prática como o educar pelo sentir transforma vidas — começando pela sua. Permita-se viver uma experiência única, profunda e transformadora. </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 mt-1" style={{ color: '#274375' }} />
@@ -205,12 +191,69 @@ const Index = () => {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
 
-      {/* Benefícios - com conteúdo movido */}
-      <section className="py-20" style={{ 
+      {/* Sobre a Palestrante */}
+      <section className="py-20" style={{background: 'white'}}>
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
+                Conheça Amélia Cristina Skiba
+              </h2>
+              <p className="text-xl text-gray-600">
+                Especialista em desenvolvimento infantil e criadora da metodologia Educação Expressiva
+              </p>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <img 
+                  src="/img-uploads/amelia_e_filha.jpg" 
+                  alt="Amélia Cristina Skiba"
+                  className="rounded-2xl shadow-2xl w-full object-cover"
+                />
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <p className="text-gray-700 leading-relaxed">
+                    Há 25 anos trabalho na educação infantil e ao longo desses anos, vim percebendo enormes dificuldades de aprendizado das crianças, grandiosos problemas de relacionamento entre as famílias, estou vendo muitos professores adoecerem,  resultando em uma educação colapsada, professores desistindo, crianças frustradas, rebeldes e famílias arrasadas.
+                    <br/>
+                    <b>E quem é o culpado?</b>
+                    <br/>
+                    De uns anos para cá, esse assunto virou a minha cabeça e nesse momento é o que me move para poder mostrar o que está além do obvio, aquilo que ninguém está vendo, mas está sentindo. Preciso te contar qual a fórmula para fazer a mente do seu filho ser de um campeão e como as emoções podem influenciar no sucesso dele positivamente ou negativamente.  
+E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com as minhas formações terapêuticas e desenvolvi minha metodologia: A Educação Expressiva - O Educar pelo Sentir e foi para aliviar essas dores invisíveis que a IMERSÃO PAIS CONSCIENTES, FILHOS INABALAVEIS foi tão almejada e agora toma forma na sua 1ª Edição.
+                  </p>
+                </div>
+                <div className="grid gap-3">
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
+                    Mestre em Desenvolvimento Infantil
+                  </Badge>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
+                    Perita em Programação Neurolinguística
+                  </Badge>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#446cad' }}>
+                    Especialista em Neuropsicologia e Aprendizagem
+                  </Badge>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
+                    Terapeuta Multidimensional
+                  </Badge>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
+                    Especialista em Gestão das Emoções
+                  </Badge>
+                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
+                    Especialista em Meditação Científica
+                  </Badge>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="py-20" style={{ 
         background: 'linear-gradient(135deg, #446cad 0%, #082144 100%)' 
       }}>
         <div className="container mx-auto px-6">
@@ -222,8 +265,6 @@ const Index = () => {
               Após participar deste evento, você será capaz de transformar completamente sua relação familiar
             </p>
           </div>
-          
-          {/* Benefícios originais */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon;
@@ -241,15 +282,16 @@ const Index = () => {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Conteúdo */}
       <section className="py-20">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6" style={{justifyItems: 'center'}}>
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
               O que você vai viver nesse dia
             </h2>
+            <p>Se você tem filhos de até 7 anos e está sentindo algo diferente, mas não consegue compreender racionalmente o que está acontecendo, essa imersão é para você.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {content.map((item, index) => (
@@ -262,6 +304,14 @@ const Index = () => {
               </div>
             ))}
           </div>
+          <Button 
+              size="lg" 
+              className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
+              style={{ backgroundColor: '#c39f12', marginTop: '42px' }}
+            >
+              Garantir vaga agora
+              <Ticket className="w-6 h-6 ml-3" />
+            </Button>
         </div>
       </section>
 
@@ -294,61 +344,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sobre a Palestrante */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
-                Conheça Amélia Cristina Skiba
-              </h2>
-              <p className="text-xl text-gray-600">
-                Especialista em desenvolvimento infantil e criadora da metodologia Educação Expressiva
-              </p>
-            </div>
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <img 
-                  src="/img-uploads/amelia_e_filha.jpg" 
-                  alt="Amélia Cristina Skiba"
-                  className="rounded-2xl shadow-2xl w-full object-cover"
-                />
-              </div>
-              <div className="space-y-6">
-                <div>
-                  <p className="text-gray-700 leading-relaxed">
-                    Há 25 anos trabalho na educação infantil e, ao longo desse tempo, vim percebendo enormes dificuldades de aprendizado das crianças, grandiosos problemas de relacionamento entre as famílias, muitos professores adoecendo e desistindo, resultando em uma educação colapsada, crianças frustradas, rebeldes e famílias arrasadas.
-                    <br/>
-                    <b>E quem é o culpado?</b>
-                    <br/>
-                    De uns anos para cá, esse assunto virou a minha cabeça e é o que me move para poder mostrar o que está além do óbvio, aquilo que ninguém está vendo, mas sentindo. Preciso te contar qual a fórmula para fazer a mente do seu filho ser de um campeão e como as emoções podem influenciar no sucesso dele positivamente ou negativamente.  
-                    Juntei todo o conhecimento da minha formação acadêmica e minhas formações terapêuticas e desenvolvi minha metodologia: A Educação Expressiva - O Educar pelo Sentir. Foi para aliviar essas dores invisíveis que a <b style={{color: '#c39f12'}}>IMERSÃO ALÉM DO ÓBVIO</b> foi tão almejada e agora toma forma na sua 1ª Edição.
-                  </p>
-                </div>
-                <div className="grid gap-3">
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
-                    Mestre em Desenvolvimento Infantil
-                  </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
-                    Perita em Programação Neurolinguística
-                  </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#446cad' }}>
-                    Especialista em Neuropsicologia e Aprendizagem
-                  </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
-                    Terapeuta Multidimensional
-                  </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#082144' }}>
-                    Especialista em Gestão das Emoções
-                  </Badge>
-                  <Badge className="w-fit text-white" style={{ backgroundColor: '#274375' }}>
-                    Especialista em Meditação Científica
-                  </Badge>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section>
+        
       </section>
 
       {/* CTA Final - com informações do ticket */}
@@ -371,7 +368,7 @@ const Index = () => {
                 </div>
 
                 <p className="text-yellow-400 font-bold text-sm">
-                  Corra! Somente 20 vagas restantes
+                  Corra! Temos somente 20 vagas restantes!
                 </p>
               </div>
             </div>
@@ -384,43 +381,6 @@ const Index = () => {
             >
               Garantir Minha Aplicação
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4" style={{ color: '#082144' }}>
-                Perguntas Frequentes
-              </h2>
-              <p className="text-xl text-gray-600">
-                Tire suas dúvidas sobre o evento
-              </p>
-            </div>
-            <div className="space-y-6">
-              {faqItems.map((item, index) => (
-                <Card key={index} className="border shadow-md">
-                  <CardContent className="p-6">
-                    <h4 className="font-semibold mb-2" style={{ color: '#082144' }}>
-                      {item.question}
-                    </h4>
-                    <p className="text-gray-700">{item.answer}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <div className="text-center mt-12">
-              <p className="text-gray-600 mb-4">Ainda tem dúvidas?</p>
-              <Button 
-                className="bg-green-600 hover:bg-green-700 text-white font-semibold transition-colors"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Falar no WhatsApp
-              </Button>
-            </div>
           </div>
         </div>
       </section>
