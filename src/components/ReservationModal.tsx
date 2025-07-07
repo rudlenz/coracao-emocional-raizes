@@ -88,7 +88,10 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+    <Dialog open={isOpen} onOpenChange={() => {
+        onClose()
+        setErrors({ name: '', whatsapp: '' });
+      }}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <div className="bg-[url(/img-uploads/logoToHero.png)] ..." style={{backgroundSize: 'cover', margin: 'auto', width: '210px', height: '70px', backgroundPosition: 'center'}}/>
