@@ -92,16 +92,16 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
         onClose()
         setErrors({ name: '', whatsapp: '' });
       }}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md bg-white/10 backdrop-blur-md">
         <DialogHeader>
           <div className="bg-[url(/img-uploads/logoToHero.png)] ..." style={{backgroundSize: 'cover', margin: 'auto', width: '210px', height: '70px', backgroundPosition: 'center'}}/>
-          <DialogTitle className="text-center text-xl font-bold" style={{ color: '#082144' }}>
+          <DialogTitle className="text-center text-white text-xl font-bold">
             Preencha os dados para prosseguir
           </DialogTitle>
         </DialogHeader>
         <div className="space-y-4 py-4">
           <div className="space-y-2">
-            <Label htmlFor="name">Nome completo</Label>
+            <Label htmlFor="name" className='text-white'>Nome completo</Label>
             <Input
               id="name"
               type="text"
@@ -115,7 +115,7 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
             )}
           </div>
           <div className="space-y-2">
-            <Label htmlFor="whatsapp">WhatsApp</Label>
+            <Label htmlFor="whatsapp" className='text-white'>WhatsApp</Label>
             <Input
               id="whatsapp"
               type="tel"
