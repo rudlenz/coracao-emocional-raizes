@@ -29,6 +29,7 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
+          <div className="bg-[url(/img-uploads/logoToHero.png)] ..." style={{backgroundSize: 'cover', margin: 'auto', width: '210px', height: '70px', backgroundPosition: 'center'}}/>
           <DialogTitle className="text-center text-xl font-bold" style={{ color: '#082144' }}>
             Preencha os dados para prosseguir
           </DialogTitle>
