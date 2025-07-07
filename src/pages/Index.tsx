@@ -2,10 +2,22 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, BookOpen, Target, CheckCircle, Star, ArrowUp, MessageCircle, Ticket, Brain, Shield, Lightbulb, Compass, Zap, CircleArrowUp, CalendarMinus2 } from "lucide-react";
+import ReservationModal from "@/components/ReservationModal";
+import { useState } from "react";
 
 const Index = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const scrollToHero = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   const benefits = [
@@ -98,7 +110,7 @@ const Index = () => {
           <Button 
             className="text-white font-semibold hover:scale-105 transition-transform px-8 py-6 rounded-full"
             style={{ backgroundColor: '#F4A261', border: '1px solid #fff' }}
-            onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
+            onClick={openModal}
           >
             Garantir vaga agora
             <Ticket className="w-5 h-5 ml-2" />
@@ -129,7 +141,7 @@ const Index = () => {
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
               style={{ backgroundColor: '#F4A261', border: '1px solid #fff' }}
-              onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
+              onClick={openModal}
             >
               Garantir vaga agora
               <Ticket className="w-6 h-6 ml-3" />
@@ -279,7 +291,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
               size="lg" 
               className="text-white font-bold text-lg px-10 py-8 hover:scale-105 transition-transform shadow-xl rounded-full"
               style={{ backgroundColor: '#F4A261', marginTop: '42px' }}
-              onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
+              onClick={openModal}
             >
               Garantir vaga agora
               <Ticket className="w-6 h-6 ml-3" />
@@ -377,7 +389,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
                   <Button 
                     size="lg" 
                     className="bg-yellow-400 text-gray-900 font-bold text-xl px-8 py-4 hover:bg-yellow-300 transition-colors shadow-xl w-full mt-6"
-                    onClick={() => window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y'}
+                    onClick={openModal}
                   >
                     Garantir Minha Vaga
                     <Ticket className="w-5 h-5 ml-2" />
@@ -438,6 +450,9 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
           </div>
         </div>
       </footer>
+
+      {/* Modal de Reserva */}
+      <ReservationModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
