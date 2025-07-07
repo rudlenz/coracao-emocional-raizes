@@ -165,7 +165,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <video height="420" controls className="mx-auto rounded-xl shadow-lg">
+              <video height="420" controls className="mx-auto rounded-xl shadow-lg" poster="/img-uploads/hero2.png">
                 <source src="/img-uploads/video.mp4" type="video/mp4" />
                 Seu navegador não suporta vídeo HTML5.
               </video>
@@ -222,7 +222,7 @@ const Index = () => {
                 Especialista em desenvolvimento infantil e criadora da metodologia Educação Expressiva
               </p>
             </div>
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div className="relative">
                 <img 
                   src="/img-uploads/amelia_e_filha.jpg" 
@@ -233,10 +233,6 @@ const Index = () => {
               <div className="space-y-6">
                 <div>
                   <p className="text-white leading-relaxed">
-                    Há 25 anos trabalho na educação infantil e ao longo desses anos, vim percebendo enormes dificuldades de aprendizado das crianças, grandiosos problemas de relacionamento entre as famílias, estou vendo muitos professores adoecerem,  resultando em uma educação colapsada, professores desistindo, crianças frustradas, rebeldes e famílias arrasadas.
-                    <br/>
-                    <b>E quem é o culpado?</b>
-                    <br/>
                     De uns anos para cá, esse assunto virou a minha cabeça e nesse momento é o que me move para poder mostrar o que está além do obvio, aquilo que ninguém está vendo, mas está sentindo. Preciso te contar qual a fórmula para fazer a mente do seu filho ser de um campeão e como as emoções podem influenciar no sucesso dele positivamente ou negativamente.  
 E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com as minhas formações terapêuticas e desenvolvi minha metodologia: A Educação Expressiva - O Educar pelo Sentir e foi para aliviar essas dores invisíveis que a IMERSÃO PAIS CONSCIENTES, FILHOS INABALAVEIS foi tão almejada e agora toma forma na sua 1ª Edição.
                   </p>
@@ -381,7 +377,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
                   <p className="text-2xl font-semibold">23 de agosto (sábado)</p>
                   <p className="font-semibold">Evento Presencial</p>
                   <div className="text-4xl font-bold text-yellow-400 mt-6">
-                    R$ 67,00
+                    R$ 67
                   </div>
                   <p className="text-yellow-400 font-bold text-sm">
                     Corra! Temos somente 20 vagas restantes!
@@ -406,7 +402,7 @@ E diante disso eu juntei todo o conhecimento da minha formação acadêmica, com
                   <p className="text-2xl font-semibold">23 de agosto (sábado)</p>
                   <p className="font-semibold">Evento Presencial</p>
                   <div className="text-4xl font-bold text-gray-400 mt-6">
-                    R$ 97,00
+                    R$ 97
                   </div>
                   <p className="text-gray-400 font-bold text-sm">
                     Próximo lote disponível em breve
