@@ -19,9 +19,71 @@ interface ReservationModalProps {
 const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
   const [name, setName] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
+  const [errors, setErrors] = useState({ name: '', whatsapp: '' });
+
+  const validateWhatsApp = (phone: string) => {
+    // Remove todos os caracteres não numéricos
+    const cleanPhone = phone.replace(/\D/g, '');
+    // Verifica se tem pelo menos 10 dígitos (formato brasileiro mínimo)
+    return cleanPhone.length >= 10 && cleanPhone.length <= 11;
+  };
+
+  const formatWhatsApp = (value: string) => {
+    // Remove tudo que não é número
+    const numbers = value.replace(/\D/g, '');
+    
+    // Aplica a máscara (XX) XXXXX-XXXX
+    if (numbers.length <= 2) {
+      return `(${numbers}`;
+    } else if (numbers.length <= 7) {
+      return `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`;
+    } else {
+      return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
+    }
+  };
+
+  const handleWhatsAppChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatWhatsApp(e.target.value);
+    setWhatsapp(formatted);
+    
+    // Remove erro quando o usuário começar a digitar
+    if (errors.whatsapp) {
+      setErrors(prev => ({ ...prev, whatsapp: '' }));
+    }
+  };
+
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+    
+    // Remove erro quando o usuário começar a digitar
+    if (errors.name) {
+      setErrors(prev => ({ ...prev, name: '' }));
+    }
+  };
 
   const handleReservation = () => {
-    // Redireciona para a página de compra
+    const newErrors = { name: '', whatsapp: '' };
+    
+    // Validação do nome
+    if (!name.trim()) {
+      newErrors.name = 'Nome é obrigatório';
+    }
+    
+    // Validação do WhatsApp
+    if (!whatsapp.trim()) {
+      newErrors.whatsapp = 'WhatsApp é obrigatório';
+    } else if (!validateWhatsApp(whatsapp)) {
+      newErrors.whatsapp = 'Número de WhatsApp inválido';
+    }
+    
+    // Se há erros, mostra eles e não prossegue
+    if (newErrors.name || newErrors.whatsapp) {
+      setErrors(newErrors);
+      return;
+    }
+    
+    // Se chegou aqui, todos os campos são válidos
+    console.log('Dados válidos:', { name, whatsapp });
     window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y';
   };
 
@@ -42,18 +104,27 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
               type="text"
               placeholder="Digite seu nome completo"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={handleNameChange}
+              className={errors.name ? 'border-red-500' : ''}
             />
+            {errors.name && (
+              <p className="text-red-500 text-sm">{errors.name}</p>
+            )}
           </div>
           <div className="space-y-2">
             <Label htmlFor="whatsapp">WhatsApp</Label>
             <Input
               id="whatsapp"
               type="tel"
-              placeholder="Digite seu WhatsApp"
+              placeholder="(11) 99999-9999"
               value={whatsapp}
-              onChange={(e) => setWhatsapp(e.target.value)}
+              onChange={handleWhatsAppChange}
+              maxLength={15}
+              className={errors.whatsapp ? 'border-red-500' : ''}
             />
+            {errors.whatsapp && (
+              <p className="text-red-500 text-sm">{errors.whatsapp}</p>
+            )}
           </div>
           <Button 
             onClick={handleReservation}
