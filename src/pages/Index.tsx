@@ -165,7 +165,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <video height="420" controls className="mx-auto rounded-xl shadow-lg" poster="/img-uploads/hero2.png">
+              <video height="420" controls className="mx-auto rounded-xl shadow-lg" poster="/img-uploads/videoCapa.jpg">
                 <source src="/img-uploads/video.mp4" type="video/mp4" />
                 Seu navegador não suporta vídeo HTML5.
               </video>
