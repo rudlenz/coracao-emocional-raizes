@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import {
   Dialog,
@@ -10,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Ticket } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 interface ReservationModalProps {
   isOpen: boolean;
@@ -22,17 +22,12 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
   const [errors, setErrors] = useState({ name: '', whatsapp: '' });
 
   const validateWhatsApp = (phone: string) => {
-    // Remove todos os caracteres não numéricos
     const cleanPhone = phone.replace(/\D/g, '');
-    // Verifica se tem pelo menos 10 dígitos (formato brasileiro mínimo)
     return cleanPhone.length >= 10 && cleanPhone.length <= 11;
   };
 
   const formatWhatsApp = (value: string) => {
-    // Remove tudo que não é número
     const numbers = value.replace(/\D/g, '');
-    
-    // Aplica a máscara (XX) XXXXX-XXXX
     if (numbers.length <= 2) {
       return `(${numbers}`;
     } else if (numbers.length <= 7) {
@@ -45,8 +40,6 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
   const handleWhatsAppChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formatted = formatWhatsApp(e.target.value);
     setWhatsapp(formatted);
-    
-    // Remove erro quando o usuário começar a digitar
     if (errors.whatsapp) {
       setErrors(prev => ({ ...prev, whatsapp: '' }));
     }
@@ -54,8 +47,6 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
-    
-    // Remove erro quando o usuário começar a digitar
     if (errors.name) {
       setErrors(prev => ({ ...prev, name: '' }));
     }
@@ -63,33 +54,43 @@ const ReservationModal = ({ isOpen, onClose }: ReservationModalProps) => {
 
   const handleReservation = () => {
     const newErrors = { name: '', whatsapp: '' };
-    
-    // Validação do nome
+
     if (!name.trim()) {
       newErrors.name = 'Nome é obrigatório';
     }
-    
-    // Validação do WhatsApp
     if (!whatsapp.trim()) {
       newErrors.whatsapp = 'WhatsApp é obrigatório';
     } else if (!validateWhatsApp(whatsapp)) {
       newErrors.whatsapp = 'Número de WhatsApp inválido';
     }
-    
-    // Se há erros, mostra eles e não prossegue
+
     if (newErrors.name || newErrors.whatsapp) {
       setErrors(newErrors);
       return;
     }
-    
-    // Se chegou aqui, todos os campos são válidos
-    console.log('Dados válidos:', { name, whatsapp });
-    window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y';
+
+    const templateParams = {
+      name,
+      whatsapp,
+    };
+
+    emailjs.send(
+      'service_hl1quxw',
+      'template_9wqc55o',  
+      templateParams,
+      '8FRQNCOUG9ZiCyCC4'
+    ).then(() => {
+      console.log('E-mail enviado com sucesso!');
+      window.location.href = 'https://sun.eduzz.com/D0RA8P5J9Y';
+    }).catch((error) => {
+      console.error('Erro ao enviar:', error);
+      alert('Erro ao enviar. Tente novamente.');
+    });
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={() => {
-        onClose()
+        onClose();
         setErrors({ name: '', whatsapp: '' });
       }}>
       <DialogContent className="sm:max-w-md bg-white/10 backdrop-blur-md">
